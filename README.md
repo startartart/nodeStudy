@@ -1,5 +1,9 @@
 # Node.js 프로젝트 투입 일주일 전
+
+***
+
 <center><img src="./gitreadme/main.png" width="500"></center>
+
 <div align="center">
     language:
 	<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
@@ -10,10 +14,14 @@
     <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white" />
     <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=MongoDB&logoColor=white" />
 </div>
+
+***
+
 ## 목차
+
 1. [Chapter 1 : Node.js](./gitreadme/ch1.md)
 2. [Chapter 2 : 개발환경 구성](./gitreadme/ch2.md)
-3. 서버 프로그램을 위한 자바스크립트
+3. [Chapter 3 : 서버 프로그램을 위한 자바스크립트](./gitreadme/ch3.md)
 4. Node.js 시작하기
 5. Node.js 내장 모듈과 객체
 6. json-server 이용하기
