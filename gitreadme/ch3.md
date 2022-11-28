@@ -6,7 +6,7 @@
         * let : 재선언을 막은 var
         * const : 선언과 동시에 할당되는 const, 재할당이 불가능하다.
 * 화살표 함수
-```c
+```js
 const hello = (name) => {return "Hello" + name}; // 일반적인 화살표 함수 표현
 
 const hello2 = name => {return "Hello" + name}; // 파라미터가 하나만 있을 때 주변 괄효 생략 가능
@@ -16,7 +16,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
 
 * Array 내장 함수
     * sort() : 기본 오름차순 정렬을 가진다.
-        ```c
+        ```js
         let points = [40, 100, 1, 5, 25, 10];
         points.sort(function(a, b){return a - b}); // 내림차순의 경우 b-a
 
@@ -37,7 +37,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
 
 * Array Destructuring : Object 형태와 동일, 인덱스 번호를 사용하게 된다.
     > 배열 안에 배열이 있는 경우도 분해할 수 있다.
-    ```c
+    ```js
     function getProfile() {
         return [
             'John',
@@ -56,7 +56,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
     ```
 
 * Default Function Parameter : 파라미터가 전달되지 않을 경우 사용할 기본값을 설정한다.
-    ```c
+    ```js
     function say(message="파라미터가 넘어오지 않았어요") {
         console.log(message);
     }
@@ -64,7 +64,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
     ```
 
 * Rest Parameter : 명시되어 있지 않은 파라미터 갯수를 전달하는 방법
-    ```c
+    ```js
     function sum(...args) {
         let total = 0;
         for (let x of args) {
@@ -80,7 +80,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
 
 * Promise : 비동기처리에 사용되는 객체
     * 파일쓰기, 데이터베이스 트랜잭션 처리 등 대기하지 않고 다음 코드를 실행할 수 있도록 해준다.
-        ```c
+        ```js
         const promis = new Promise9((resove, reject) => {
             if (true) { // 처리가 성공적이라면
                 resolve("결과 데아터");
@@ -91,7 +91,7 @@ const hello3 = name => "Hello " + name; // 유일 문장이 return 일경우, re
         ```
 
 * Async/Await : Promise와 동일한 목적으로, await를 사용한 코드는 반드시 async여야 한다.
-    ```c
+    ```js
     async function myFunction() {
         const r = await asyncFunction();
     }
