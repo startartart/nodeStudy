@@ -108,6 +108,8 @@
         * `fs.watchFile(filename[,options], listener)` :변경 사항이 발생하면 지정한 콜백 리스너 함수를 실행할 수 있다.
             > 데이터베이스 조작을 위한 쿼리문을 작성한 파일을 watchFile() 함수로 감시한다면, Node.js 서버를 재시작하지 않아도 변경된 내용을 바로 반영할 수 있다.
 
+***
+
 #### 자체 심화문제 : crypto.js에서 salting된 password와 salt값을 데이터베이스에 저장됨을 console로 나타내고 이를 다시 가져오는 작업을 console로 나타내라.
 ```
 데이터베이스 저장이 되었습니다. password는 Sn8pci3s/REjIBGVsv0UKySB7f3PxNvBf35R29n7Vg/lj3nkt2hyIKcKVtoeqJ9ZAGNHKOu9S82Q/cynAsCdCw==,
