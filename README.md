@@ -26,7 +26,7 @@
 5. [Chapter 5 : Node.js 내장 모듈과 객체](./gitreadme/ch5.md)
 6. json-server 이용하기
 7. Express로 웹 서버 구축하기
-8. 데이터베이스 상ㅇ하기
+8. 데이터베이스 사용하기
 9. 애플리케이션 운영과 고성능 웹을 위한 Node.js
 10. Node.js 미니 프로젝트
 
