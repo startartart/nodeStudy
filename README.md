@@ -24,11 +24,11 @@
 3. [Chapter 3 : 서버 프로그램을 위한 자바스크립트](./gitreadme/ch3.md)
 4. [Chapter 4 : Node.js 시작하기](./gitreadme/ch4.md)
 5. [Chapter 5 : Node.js 내장 모듈과 객체](./gitreadme/ch5.md)
-6. json-server 이용하기
-7. Express로 웹 서버 구축하기
-8. 데이터베이스 사용하기
-9. 애플리케이션 운영과 고성능 웹을 위한 Node.js
-10. Node.js 미니 프로젝트
+6. [Chapter 6 : json-server 이용하기](./gitreadme/ch6.md)
+7. [Chapter 7 : Express로 웹 서버 구축하기](./gitreadme/ch7.md)
+8. [Chapter 8 : 데이터베이스 사용하기](./gitreadme/ch8.md)
+9. [Chapter 9 : 애플리케이션 운영과 고성능 웹을 위한 Node.js](./gitreadme/ch9.md)
+10. [Chapter 10 : Node.js 미니 프로젝트](./gitreadme/ch10.md)
 
 
 # nodejs
