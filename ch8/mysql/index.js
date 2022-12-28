@@ -17,6 +17,4 @@ const query = async (alias, params) => {
     }));
 };
 
-module.exports = {
-    query
-};
+module.exports = { query };
