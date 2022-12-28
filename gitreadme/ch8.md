@@ -22,3 +22,11 @@
     * `ch8/app.js` : 이전에 작성된 `query()` 함수를 받아와 `/api/customers` 접속 시 조회한다.
 
 * [dotenv 모듈 사용하기](../gitreadme/middleware/dotenv.md)
+
+* database 추가 실습
+    * 추가 쿼리를 작성한다.
+    ```js
+    `cusomerInsert: insert into customers set ?`
+    ```
+    * `body-parser`의 `json` 타입의 `body`를 최대 50메가로 제한하고 파싱처리한다.
+    * 고객 정보 추가 라우터로 `POST` 방식의 입력 라우트를 받는다. `/api/customer/insert`
