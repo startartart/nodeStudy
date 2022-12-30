@@ -15,7 +15,7 @@
 
 * database 조회 실습
     * `ch8/mysql/sql.js` : 쿼리가 저장되어있다.
-    ```
+    ```js
     customerList: `select * from customers`
     ```
     * `ch8/mysql/index.js` : Pool을 생성하고 쿼리문을 실행하여 반환하는 함수를 작성한다.
@@ -26,7 +26,30 @@
 * database 추가 실습
     * 추가 쿼리를 작성한다.
     ```js
-    `cusomerInsert: insert into customers set ?`
+    cusomerInsert: `insert into customers set ?`
     ```
     * `body-parser`의 `json` 타입의 `body`를 최대 50메가로 제한하고 파싱처리한다.
     * 고객 정보 추가 라우터로 `POST` 방식의 입력 라우트를 받는다. `/api/customer/insert`
+
+* database 수정 실습
+    * 수정 쿼리를 작성한다.
+    ```js
+    customerUpdate: `update customers set ? where id=?`
+    ```
+    * 고객 정보 수정 라우터로 `PUT` 방식의 입력 라우트를 받는다. `/api/customer/update`
+
+* database 삭제 실습
+    * 삭제 쿼리를 작성한다.
+    ```js
+    customerDelete: `delete from customers where id=?`
+    ```
+    * 고객 정보 삭제 라우터로 `DELETE` 방식의 입력 라우트를 받는다. `/api/customer/delete/:id`
+
+* `nodemon` `Sequelize` 미들웨어
+    * `nodemon`으로 실행 시 변경 사항을 감지해 재실행 없이 자동 반영이된다.
+    * 특정 디렉터리만 감시하려면 `nodemon --watch {감시대상} {재실행 파일}`과 같이 실행한다.
+    * [Sequelize 사용하기](../gitreadme/middleware/sequelize.md)
+
+* ORM의 장단점 : 실무에서는 Sequelize를 사용하지 않고 쿼리문을 직접 작성해서 사용하는 경우가 대부분이고, 테이블간 조인을 복잡하게 처리해야 할 상황이 많다.
+    * 규모가 큰 애플리케이션의 경우 ORM으로 원하는 데이터를 추출하기 위한 코드를 구현하는 것이 쉽지 않고 잘못 구현하면 오히려 성능이 낮아진다.
+    * SQL 쿼리문에 대한 충분한 경험이 없다면 당장 ORM을 쓰는 것 보다 직접 쿼리를 짜는 것이 좋다.
