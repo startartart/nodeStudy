@@ -22,3 +22,15 @@ app.post('/api/customer/insert', async (req, res) => {
     const result = await mysql.query('customerInsert', req.body.param);
     res.send(result);
 })
+
+app.put('/api/customer/update', async (req, res) => {
+    const result = await mysql.query('customerUpdate', req.body.param);
+    res.send(result);
+    console.log(result);
+});
+
+app.delete('/api/customer/delete/:id', async (req, res) => {
+    const {id} = req.params;
+    const result = await mysql.query('customerDelete', id);
+    res.send(result);
+});
