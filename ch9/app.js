@@ -1,4 +1,6 @@
 const express = require('express');
+const cron = require('node-cron');
+
 require('dotenv').config({ path: '.env' });
 
 const nodemailer = require('./send_email');
@@ -22,4 +24,8 @@ app.post('/api/send2', async (req, res) => {
     const result = await nodemailerMailtrap.sendInbox(req.body.param);
     res.send(result);
     console.log(result);
+});
+
+cron.schedule('* * * * * *', () => {
+    console.log('1 seconds passed');
 });
