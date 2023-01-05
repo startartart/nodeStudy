@@ -42,3 +42,4 @@
 * [dotenv](./gitreadme/middleware/dotenv.md)
 * [nodemailer](./gitreadme/middleware/nodemailer.md)
 * [node-cron](./gitreadme/middleware/node-cron.md)
+* [socket.io](./gitreadme/middleware/socket.io.md)

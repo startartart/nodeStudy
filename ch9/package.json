@@ -13,6 +13,9 @@
     "express": "^4.18.2",
     "node-cron": "^3.0.2",
     "nodemailer": "^6.8.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4",
+    "socket.io-client": "^4.5.4",
+    "xlsx": "^0.18.5"
   }
 }
